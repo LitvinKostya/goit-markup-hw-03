@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.woff") format("woff"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto/roboto-v20-latin_cyrillic-500.eot");
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.woff") format("woff"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.ttf") format("truetype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto/roboto-v20-latin_cyrillic-700.eot");
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.woff") format("woff"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.ttf") format("truetype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto/roboto-v20-latin_cyrillic-900.eot");
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.woff") format("woff"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.ttf") format("truetype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway-700/raleway-v18-latin_cyrillic-700.eot");
+  src: local(""), url("../fonts/raleway-700/raleway-v18-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/raleway-700/raleway-v18-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/raleway-700/raleway-v18-latin_cyrillic-700.woff") format("woff"),
+    url("../fonts/raleway-700/raleway-v18-latin_cyrillic-700.ttf") format("truetype"),
+    url("../fonts/raleway-700/raleway-v18-latin_cyrillic-700.svg#Raleway") format("svg");
+}
+
+:root {
+  --acent-cl: #2196f3;
+  --secondary-text-cl: #212121;
+  --main-text-cl: #757575;
+  --white: #ffffff;
+  --work-portfolio-bg: #e5e5e5;
+  --team-bg-cl: #f5f4fa;
+  --footer-bg-cl: #2f303a;
+  --footer-contacts: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+}
+
+/*тип шрифта(курсив.обычный*/
+address {
+  font-style: normal;
+}
+
+/*убираем подчеркивание и ставим цвет основного текста*/
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*ставим подсвечивание*/
+.link:hover,
+.link:focus {
+  color: var(--acent-cl);
+}
+
+/*убиреаем точки */
+.list {
+  list-style: none;
+}
+
+/*кнопка*/
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--acent-cl);
+  color: var(--white);
+}
+
+.btn-portfolio {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: var(--team-bg-cl);
+  color: var(--secondary-text-cl);
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  background-color: var(--acent-cl);
+  color: var(--white);
+}
+
+/*логотип*/
+
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--acent-cl);
+  text-decoration: none;
+}
+
+.studio-cl-1 {
+  color: var(--secondary-text-cl);
+}
+
+.studio-cl-2 {
+  color: var(--white);
+}
+
+.logo:hover,
+.logo:focus,
+.studio-cl-1:hover,
+.studio-cl-1:focus,
+.studio-cl-2:hover,
+.studio-cl-2:focus {
+  color: plum;
+}
+
+/*стили на навигацию*/
+.menu-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-cl);
+}
+
+.header-cont {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-mail {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/*титулка*/
+.title-head {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.section-color {
+  background-color: var(--footer-bg-cl);
+}
+.page-title {
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-cl);
+}
+
+.activity {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase; /*все заглавные*/
+  color: var(--secondary-text-cl);
+}
+
+.teams-name {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-cl);
+}
+
+.team-profession {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.name-icons {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-cl);
+}
+
+.icon-group {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+}
+
+.footer-bg {
+  background-color: var(--footer-bg-cl);
+}
+
+.footer-contacts {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white);
+}
+
+.footer-color {
+  color: rgba(255, 255, 255, 0.6);
+}

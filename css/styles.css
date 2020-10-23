@@ -73,12 +73,44 @@
   --footer-contacts: rgba(255, 255, 255, 0.6);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
+}
+
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+.container-list {
+  border: 2px solid tomato;
+}
+
+.container-contacts {
+  margin: 0px;
+  border: 2px solid tomato;
 }
 
 /*тип шрифта(курсив.обычный*/
@@ -100,13 +132,21 @@ address {
 
 /*убиреаем точки */
 .list {
+  padding: 0px;
+  margin: 0px;
   list-style: none;
 }
 
 /*кнопка*/
 .btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
   font-family: inherit;
   font-style: normal;
+  min-width: 200px;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -116,7 +156,13 @@ address {
 }
 
 .btn-portfolio {
+  border: 1px solid transparent;
+  display: inline-block;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
   font-family: Roboto;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -133,7 +179,16 @@ address {
 
 /*логотип*/
 
-.logo {
+.logo-header {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--acent-cl);
+  text-decoration: none;
+}
+
+.logo-footer {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -186,7 +241,20 @@ address {
 }
 
 /*титулка*/
-.title-head {
+
+.hero {
+  text-align: center;
+  background-color: var(--footer-bg-cl);
+}
+
+.title-position {
+  max-width: 696px;
+  border: 1px solid tomato;
+}
+
+.title-hero {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
@@ -195,18 +263,13 @@ address {
   color: var(--white);
 }
 
-.section-color {
-  background-color: var(--footer-bg-cl);
-}
-.page-title {
-  font-family: Roboto;
-  font-size: 36px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-cl);
+.activity-list {
+  margin-top: 0px;
 }
 
 .activity {
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.14;
@@ -215,7 +278,34 @@ address {
   color: var(--secondary-text-cl);
 }
 
+.act-text {
+  margin: 0px;
+}
+
+.page-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-cl);
+}
+
+.team-container {
+  width: 270px;
+  display: inline-block;
+  border: 1px solid pink;
+}
+
+.team-cards {
+  text-align: center;
+}
+
 .teams-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -225,13 +315,39 @@ address {
 }
 
 .team-profession {
+  margin-top: 0px;
+  margin-bottom: 30px;
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
 
+/* Портфолио*/
+
+.menu {
+  text-align: center;
+  margin-bottom: 50px;
+  border: 2px solid tomato;
+}
+
+.menu-item {
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.portfolio-cards {
+  display: inline-block;
+  border: 1px solid blue;
+}
+
+.cards-name {
+  border: 1px solid pink;
+}
+
 .name-icons {
+  margin: 20px 24px 4px 24px;
+
   font-family: Roboto;
   font-size: 18px;
   line-height: 2;
@@ -240,6 +356,7 @@ address {
 }
 
 .icon-group {
+  margin: 0px 24px 20px 24px;
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.87;
@@ -247,8 +364,14 @@ address {
   color: var(--main-text-cl);
 }
 
+/* Футрер*/
+
 .footer-bg {
   background-color: var(--footer-bg-cl);
+}
+
+.footer-container {
+  border: 1px solid tomato;
 }
 
 .footer-contacts {
@@ -257,8 +380,26 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white);
+
+  border: 1px solid tomato;
 }
 
-.footer-color {
+.footer-target {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+
+.footer-mail {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: rgba(255, 255, 255, 0.6);
 }

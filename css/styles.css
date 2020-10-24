@@ -109,7 +109,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 .container-list {
@@ -129,6 +128,10 @@ body {
 
 .list .item-header:not(:last-child) {
   margin-right: 50px;
+}
+.item-header {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .container-contacts {
@@ -171,6 +174,10 @@ address {
   color: var(--white);
 }
 
+.btn-hero {
+  margin-bottom: 210px;
+}
+
 .btn-portfolio {
   border: 1px solid transparent;
   display: inline-block;
@@ -196,6 +203,8 @@ address {
 /*логотип*/
 
 .logo-header {
+  margin-top: 24px;
+  margin-bottom: 25px;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -264,7 +273,8 @@ address {
 }
 
 .title-hero {
-  margin-top: 0;
+  padding-top: 200px;
+  margin-top: 0px;
   margin-bottom: 40px;
   font-family: Roboto;
   font-weight: 900;
@@ -300,6 +310,8 @@ address {
 }
 
 .act .item-activity {
+  margin-top: 94px;
+
   width: 270px;
 }
 
@@ -311,6 +323,7 @@ address {
 
 .foto {
   display: flex;
+  padding-bottom: 94px;
 }
 
 .item-foto + .item-foto {
@@ -320,6 +333,7 @@ address {
 /*Команда*/
 
 .page-title {
+  padding-top: 94px;
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
@@ -337,11 +351,14 @@ address {
 .team-container {
   width: 270px;
   display: block;
-  border: 1px solid tomato;
 }
 
 .item-team + .item-team {
   margin-left: 30px;
+}
+
+.item-team {
+  margin-bottom: 94px;
 }
 .team {
   text-align: center;
@@ -370,8 +387,8 @@ address {
 /* Портфолио*/
 
 .menu {
+  padding-top: 94px;
   margin-bottom: 50px;
-  border: 2px solid tomato;
 }
 
 .menu-list {
@@ -381,7 +398,6 @@ address {
 
 .menu-item {
   display: inline-block;
-  border: 1px solid tomato;
 }
 
 .menu-item + .menu-item {
@@ -393,6 +409,7 @@ address {
 .flexbox {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 94px;
 }
 
 .portfolio-cards {
@@ -400,11 +417,9 @@ address {
   display: inline-block;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid blue;
 }
 
 .cards-name {
-  border: 1px solid pink;
 }
 
 .card-menu {
@@ -443,23 +458,21 @@ address {
   background-color: var(--footer-bg-cl);
 }
 
-.footer-container {
-  border: 1px solid tomato;
-}
-
 .footer-contacts {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white);
+}
 
-  border: 1px solid tomato;
+.logo-box {
+  padding-top: 60px;
 }
 
 .footer-target {
   display: inline-block;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 9px;
 }
 

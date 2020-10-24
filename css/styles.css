@@ -340,7 +340,7 @@ address {
   border: 1px solid tomato;
 }
 
-.team-container + .team-container {
+.item-team + .item-team {
   margin-left: 30px;
 }
 .team {

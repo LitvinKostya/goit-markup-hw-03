@@ -138,6 +138,10 @@ body {
   display: flex;
   margin-left: auto;
 }
+.border {
+  margin: 0px;
+  border: 1px solid #ececec;
+}
 
 /*тип шрифта(курсив.обычный*/
 address {
@@ -294,6 +298,7 @@ address {
 
 .activity-list {
   margin-top: 0px;
+  padding-top: 94px;
 }
 
 .activity {
@@ -309,7 +314,6 @@ address {
 
 .act {
   display: flex;
-  padding-top: 94px;
 }
 
 .act .item-activity + .item-activity {
@@ -397,11 +401,6 @@ address {
 .portfolio-cont {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.hr-header {
-  margin: 0px;
-  border: 1px solid #ececec;
 }
 
 .menu {

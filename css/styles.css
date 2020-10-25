@@ -174,10 +174,6 @@ address {
   color: var(--white);
 }
 
-.btn-hero {
-  margin-bottom: 210px;
-}
-
 .btn-portfolio {
   border: 1px solid transparent;
   display: inline-block;
@@ -268,20 +264,30 @@ address {
 /*титульная страница*/
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 210px;
   text-align: center;
   background-color: var(--footer-bg-cl);
 }
 
 .title-hero {
-  padding-top: 200px;
-  margin-top: 0px;
-  margin-bottom: 40px;
+  margin: 0px;
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--white);
+}
+
+.title {
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 696px;
+}
+.btn-hero {
 }
 
 /* Деятельность */
@@ -303,6 +309,7 @@ address {
 
 .act {
   display: flex;
+  padding-top: 94px;
 }
 
 .act .item-activity + .item-activity {
@@ -310,8 +317,6 @@ address {
 }
 
 .act .item-activity {
-  margin-top: 94px;
-
   width: 270px;
 }
 
@@ -323,17 +328,19 @@ address {
 
 .foto {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .item-foto + .item-foto {
   margin-left: 30px;
 }
+.title-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*Команда*/
 
 .page-title {
-  padding-top: 94px;
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
@@ -357,8 +364,9 @@ address {
   margin-left: 30px;
 }
 
-.item-team {
-  margin-bottom: 94px;
+.team-box {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team {
   text-align: center;
@@ -386,8 +394,17 @@ address {
 
 /* Портфолио*/
 
-.menu {
+.portfolio-cont {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.hr-header {
+  margin: 0px;
+  border: 1px solid #ececec;
+}
+
+.menu {
   margin-bottom: 50px;
 }
 
@@ -409,7 +426,6 @@ address {
 .flexbox {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .portfolio-cards {
@@ -417,6 +433,7 @@ address {
   display: inline-block;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .cards-name {
@@ -468,6 +485,7 @@ address {
 
 .logo-box {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-target {
